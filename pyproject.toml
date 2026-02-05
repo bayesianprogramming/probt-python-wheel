@@ -7,7 +7,10 @@ name = "probt"
 version = "1.0.0"
 description = "ProBT Python bindings (binary distribution)"
 requires-python = ">=3.9"
-dependencies = []
+dependencies = [
+    "numpy==1.26.4",
+    "pandas==2.3.3"
+]
 
 [tool.setuptools]
 package-dir = {"" = "src"}
