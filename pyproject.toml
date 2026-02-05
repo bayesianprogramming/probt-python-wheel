@@ -1,1 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "probt"
+version = "1.0.0"
+description = "ProBT Python bindings (binary distribution)"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+probt = ["*.so*", "*.dll", "*.jar", "*.txt", "*.py"]
 
